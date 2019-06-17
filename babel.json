@@ -1,10 +1,10 @@
 {
-    "name":"POJ",
-    "code":"poj",
+    "name":"Template",
+    "code":"template",
     "type":"virtual-judge",
-    "description": "POJ Interface for NOJ",
+    "description": "Template of Interface for NOJ",
     "license": "MIT",
-    "repository":"https://github.com/ZsgsDesign/POJ",
+    "repository":"https://github.com/NJUPTAAA/NOJ_Extensions_Template",
     "version":"0.1.0",
     "provider":{
         "judger":"Judger",

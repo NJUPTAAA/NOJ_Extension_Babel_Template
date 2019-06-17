@@ -1,5 +1,5 @@
 <?php
-namespace App\Babel\Extension\poj;
+namespace App\Babel\Extension\template;//The 'template' should be replaced by the real oj code.
 
 use App\Babel\Crawl\CrawlerBase;
 use App\Models\ProblemModel;
@@ -11,7 +11,7 @@ use Exception;
 class Crawler extends CrawlerBase
 {
     public $oid=null;
-    public $prefix="POJ";
+    public $prefix="Template";//The 'Template' should be replaced by the real oj name.
     private $con;
     private $imgi;
     /**
@@ -24,7 +24,7 @@ class Crawler extends CrawlerBase
         $action=isset($conf["action"])?$conf["action"]:'crawl_problem';
         $con=isset($conf["con"])?$conf["con"]:'all';
         $cached=isset($conf["cached"])?$conf["cached"]:false;
-        $this->oid=OJModel::oid('poj');
+        $this->oid=OJModel::oid('template');//The 'template' should be replaced by the real oj code.
 
         if(is_null($this->oid)) {
             throw new Exception("Online Judge Not Found");

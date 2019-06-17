@@ -1,5 +1,5 @@
 <?php
-namespace App\Babel\Extension\poj;
+namespace App\Babel\Extension\template;
 
 use App\Babel\Submit\Curl;
 use App\Models\SubmissionModel;
@@ -22,7 +22,7 @@ class Judger extends Curl
         'Compile Error'=>"Compile Error",
     ];
     private $model=[];
-    private $poj=[];
+    private $template=[];
 
 
     public function __construct()
