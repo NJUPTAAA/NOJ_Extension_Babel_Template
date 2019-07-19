@@ -11,6 +11,7 @@ class Submitter extends Curl
 {
     protected $sub;
     public $post_data=[];
+    protected $oid;
     protected $selectedJudger;
 
     public function __construct(& $sub, $all_data)
@@ -18,7 +19,11 @@ class Submitter extends Curl
         $this->sub=& $sub;
         $this->post_data=$all_data;
         $judger=new JudgerModel();
-        $judger_list=$judger->list(4);
+        $this->oid=OJModel::oid('template');
+        if(is_null($this->oid)) {
+            throw new Exception("Online Judge Not Found");
+        }
+        $judger_list=$judger->list($this->oid);
         $this->selectedJudger=$judger_list[array_rand($judger_list)];
     }
 
