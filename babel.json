@@ -8,6 +8,9 @@
     "repository":"https://github.com/NJUPTAAA/NOJ_Extensions_Template",
     "version":"0.0.1",
     "website":"https://acm.njupt.edu.cn/",
+    "custom":{
+        "css":"resources/custom.css"
+    },
     "provider":{
         "judger":"Judger",
         "crawler":"Crawler",
