@@ -1,5 +1,5 @@
 <?php
-namespace App\Babel\Extension\template;
+namespace App\Babel\Extension\template;//The 'template' should be replaced by the real oj code.
 
 use App\Babel\Submit\Curl;
 use App\Models\SubmissionModel;

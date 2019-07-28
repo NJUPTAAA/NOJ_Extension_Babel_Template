@@ -6,7 +6,7 @@ use Exception;
 
 class Installer extends InstallerBase
 {
-    public $ocode="template";
+    public $ocode="template";//The 'template' should be replaced by the real oj code.
 
     public function install()
     {
