@@ -2,7 +2,7 @@
 namespace App\Babel\Extension\template;//The 'template' should be replaced by the real oj code.
 
 use App\Babel\Submit\Curl;
-use App\Models\SubmissionModel;
+use App\Models\Submission\SubmissionModel;
 use App\Models\JudgerModel;
 use Requests;
 use Exception;
