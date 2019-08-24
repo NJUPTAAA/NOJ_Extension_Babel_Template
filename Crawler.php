@@ -122,6 +122,8 @@ class Crawler extends CrawlerBase
         $this->pro['solved_count']=self::find('/Accepted:.*?(\d+)/', $res->body);
         $this->pro['input_type']='standard input';
         $this->pro['output_type']='standard output';
+        $this->pro['file']=0;
+        $this->pro['file_url']=null;
         $descPattern='<p class="pst">Description</p>';
         $inputPattern='<p class="pst">Input</p>';
         $outputPattern='<p class="pst">Output</p>';

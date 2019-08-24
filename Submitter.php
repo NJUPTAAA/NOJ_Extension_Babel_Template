@@ -80,6 +80,7 @@ class Submitter extends Curl
                 $this->sub['verdict']='Submission Error';
             } else {
                 $this->sub['remote_id']=$match[1];
+                $this->sub['jid']=$this->selectedJudger['jid'];
             }
         }
     }
